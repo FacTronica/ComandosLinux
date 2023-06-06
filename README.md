@@ -16,3 +16,4 @@ Descomprimir: gzip -d index.php.gz
 Archivos .zip:
 Comprimir: zip archivo.zip carpeta
 Descomprimir: unzip archivo.zip
+
