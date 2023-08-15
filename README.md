@@ -17,3 +17,14 @@ Archivos .zip:
 <br>Comprimir: zip archivo.zip carpeta
 <br>Descomprimir: unzip archivo.zip
 
+
+EXPORTAR BASE DE DATOS:
+````
+mysqldump --user=$USUARIO --password=$CLAVE $BD > $ARCHIVO.sql;
+````
+
+
+IMPORTAR BASE DE DATOS:
+````
+mysql -u $USUARIO -p $BD < $ARCHIVO.sql;
+````
