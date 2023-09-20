@@ -28,3 +28,9 @@ IMPORTAR BASE DE DATOS:
 ````
 mysql -u $USUARIO -p $BD < $ARCHIVO.sql;
 ````
+
+# Cambiar fecha y hora Servidor
+````
+date -s "20 SEP 2023 12:00:00"
+````
+
