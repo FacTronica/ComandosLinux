@@ -29,8 +29,11 @@ IMPORTAR BASE DE DATOS:
 mysql -u $USUARIO -p $BD < $ARCHIVO.sql;
 ````
 
-# Cambiar fecha y hora Servidor
+# Comandos para Cambiar fecha y hora Servidor
 ````
+timedatectl set-timezone Chile/Continental
+timedatectl
 date -s "20 SEP 2023 12:00:00"
+en php date_default_timezone_set("Chile/Continental");
 ````
 
