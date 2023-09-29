@@ -17,17 +17,23 @@ Archivos .zip:
 <br>Comprimir: zip archivo.zip carpeta
 <br>Descomprimir: unzip archivo.zip
 
+# PERMISOS => MYSQL
+````
+mariadb -u root -p
+CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'suclave';
+GRANT ALL PRIVILEGES ON *.* to 'usuario'@'localhost';
+FLUSH PRIVILEGES;
+quit;
+````
 
-EXPORTAR BASE DE DATOS:
+# EXPORTAR E IMPORTAR BASE DE DATOS:
 ````
 mysqldump --user=$USUARIO --password=$CLAVE $BD > $ARCHIVO.sql;
-````
-
-
-IMPORTAR BASE DE DATOS:
-````
 mysql -u $USUARIO -p $BD < $ARCHIVO.sql;
 ````
+
+
+ 
 
 # Comandos para Cambiar fecha y hora Servidor
 ````
