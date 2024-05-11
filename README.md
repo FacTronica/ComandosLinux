@@ -2,12 +2,15 @@
 Un Resumen de los comandos más utilizado en Consola Linux
 
 
-# CREAR Y BORRAR USUARIO
+## CREAR Y BORRAR USUARIO
 ````
 useradd juanperez
 userdel juanperez
 ````
-
+## Espacio utilizado por cada carpeta
+````
+du -sm * > listado.txt
+````
 
 
 
