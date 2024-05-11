@@ -1,6 +1,16 @@
 # ComandosLinux
 Un Resumen de los comandos más utilizado en Consola Linux
 
+
+# CREAR Y BORRAR USUARIO
+````
+useradd juanperez
+userdel juanperez
+````
+
+
+
+
 Archivos .tar.gz:
 Comprimir: tar -czvf empaquetado.tar.gz carpeta
 Descomprimir: tar -xzvf archivo.tar.gz
