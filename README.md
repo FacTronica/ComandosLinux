@@ -12,23 +12,11 @@ userdel juanperez
 du -sm * > listado.txt
 ````
 
-
-
-Archivos .tar.gz:
-Comprimir: tar -czvf empaquetado.tar.gz carpeta
-Descomprimir: tar -xzvf archivo.tar.gz
-
-Archivos .tar:
-<br>Empaquetar: tar -cvf paquete.tar carpeta
-<br>Desempaquetar: tar -xvf paquete.tar
-
-Archivos .gz:
-<br>Comprimir: gzip -9 index.php
-<br>Descomprimir: gzip -d index.php.gz
-
-Archivos .zip:
-<br>Comprimir: zip archivo.zip carpeta
-<br>Descomprimir: unzip archivo.zip
+## Comprimir y Descomprimir Archivos .tar.gz:
+````
+tar -czvf empaquetado.tar.gz carpeta
+tar -xzvf archivo.tar.gz
+````
 
 # PERMISOS => MYSQL
 ````
@@ -44,9 +32,6 @@ quit;
 mysqldump --user=$USUARIO --password=$CLAVE $BD > $ARCHIVO.sql;
 mysql -u $USUARIO -p $BD < $ARCHIVO.sql;
 ````
-
-
- 
 
 # Comandos para Cambiar fecha y hora Servidor
 ````
