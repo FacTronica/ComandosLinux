@@ -32,6 +32,10 @@ quit;
 mysqldump --user=$USUARIO --password=$CLAVE $BD > $ARCHIVO.sql;
 mysql -u $USUARIO -p $BD < $ARCHIVO.sql;
 ````
+# DIVIDIR ARCHIVOS DE TEXTO
+````
+split -d -b 10m direccion_formateada.csv direcciones_
+````
 
 # Comandos para Cambiar fecha y hora Servidor
 ````
