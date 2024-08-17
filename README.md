@@ -12,6 +12,12 @@ userdel juanperez
 du -sm * > listado.txt
 ````
 
+## Borrar archivos recursivamente filtrando con comodin
+````
+cd /var/www/html/public_html/
+find . -name *.txt -delete
+````
+
 ## Comprimir y Descomprimir Archivos .tar.gz:
 ````
 tar -czvf empaquetado.tar.gz carpeta
