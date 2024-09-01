@@ -1,6 +1,5 @@
-# ComandosLinux
-Un Resumen de los comandos más utilizado en Consola Linux
-
+# Comandos GnuLinux
+Un Resumen de comandos básicos Consola GnuLinux  
 
 ## CREAR Y BORRAR USUARIO
 ````
@@ -24,7 +23,7 @@ tar -czvf empaquetado.tar.gz carpeta
 tar -xzvf archivo.tar.gz
 ````
 
-# PERMISOS => MYSQL
+## PERMISOS => MYSQL
 ````
 mariadb -u root -p
 CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'suclave';
@@ -33,17 +32,17 @@ FLUSH PRIVILEGES;
 quit;
 ````
 
-# EXPORTAR E IMPORTAR BASE DE DATOS:
+## EXPORTAR E IMPORTAR BASE DE DATOS:
 ````
 mysqldump --user=$USUARIO --password=$CLAVE $BD > $ARCHIVO.sql;
 mysql -u $USUARIO -p $BD < $ARCHIVO.sql;
 ````
-# DIVIDIR ARCHIVOS DE TEXTO
+## DIVIDIR ARCHIVOS DE TEXTO
 ````
 split -d -b 10m direccion_formateada.csv direcciones_
 ````
 
-# Comandos para Cambiar fecha y hora Servidor
+## Comandos para Cambiar fecha y hora Servidor
 ````
 timedatectl set-timezone Chile/Continental
 timedatectl
@@ -51,3 +50,9 @@ date -s "20 SEP 2023 12:00:00"
 en php date_default_timezone_set("Chile/Continental");
 ````
 
+## Ver logs de Apache2
+````
+tail -f /var/log/apache2/access.log
+tail -f /var/log/apache2/error.log
+tail -f /var/log/apache2/other_vhosts_access.log
+````
