@@ -50,9 +50,14 @@ date -s "20 SEP 2023 12:00:00"
 en php date_default_timezone_set("Chile/Continental");
 ````
 
-## Ver logs de Apache2
+## Ver logs de Apache2 Vsftp
 ````
 tail -f /var/log/apache2/access.log
 tail -f /var/log/apache2/error.log
 tail -f /var/log/apache2/other_vhosts_access.log
 ````
+
+## Ver logs de Vsftp
+````
+tail -f /var/log/apache2/other_vhosts_access.log
+tail -
