@@ -37,6 +37,13 @@ quit;
 mysqldump --user=$USUARIO --password=$CLAVE $BD > $ARCHIVO.sql;
 mysql -u $USUARIO -p $BD < $ARCHIVO.sql;
 ````
+
+### EJECUTAR COMANDOS SQL DESATENDIDO DESDE CONSOLA
+````
+mysql --host=localhost --user=usuariobd --password=clavebd -e "create database basedatos";
+mysql --host=localhost --user=usuariobd --password=clavebd -e "truncate table basedatos.tbl_tabla";
+````
+
 ## DIVIDIR ARCHIVOS DE TEXTO
 ````
 split -d -b 10m direccion_formateada.csv direcciones_
