@@ -68,3 +68,8 @@ tail -f /var/log/apache2/other_vhosts_access.log
 ````
 tail -f /var/log/apache2/other_vhosts_access.log
 tail -
+
+## Ver logs de Cron
+````
+journalctl
+````
