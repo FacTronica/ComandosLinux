@@ -67,9 +67,15 @@ tail -f /var/log/apache2/other_vhosts_access.log
 ## Ver logs de Vsftp
 ````
 tail -f /var/log/apache2/other_vhosts_access.log
-tail -
+````
 
 ## Ver logs de Cron
 ````
 journalctl
 ````
+
+## Buscar una cadena de texto en un archivo
+````
+grep -r "textoabuscar" archivo.txt
+````
+
