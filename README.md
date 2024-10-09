@@ -79,3 +79,8 @@ journalctl
 grep -r "textoabuscar" archivo.txt
 ````
 
+## ASIGNAR USUARIO Y GRUPO RECURSIVAMENTE
+````
+chown -R usuario carpeta
+chgrp -R usuario carpeta
+````
