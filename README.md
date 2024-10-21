@@ -84,3 +84,8 @@ grep -r "textoabuscar" archivo.txt
 chown -R usuario carpeta
 chgrp -R usuario carpeta
 ````
+
+## Buscar archivos
+````
+find . -name *.sql
+````
