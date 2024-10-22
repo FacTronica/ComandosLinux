@@ -89,3 +89,9 @@ chgrp -R usuario carpeta
 ````
 find . -name *.sql
 ````
+
+## Buscar archivos y eliminar
+````
+find . -name *.txt -delete
+````
+
