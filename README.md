@@ -95,3 +95,8 @@ find . -name *.sql
 find . -name *.txt -delete
 ````
 
+## Ejecutar php en segundo plano sin espera
+````
+shell_exec('sleep 5 > /dev/null 2>/dev/null &');
+echo "Este mensaje se imprimirá inmediatamente";
+````
