@@ -100,3 +100,11 @@ find . -name *.txt -delete
 shell_exec('sleep 5 > /dev/null 2>/dev/null &');
 echo "Este mensaje se imprimirá inmediatamente";
 ````
+
+## Crear alias
+````
+nano ~/.bashrc
+alias proyecto01="cd /var/www/html/proyectos/proyecto01"
+source ~/.bashrc
+````
+
