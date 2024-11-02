@@ -108,3 +108,8 @@ alias proyecto01="cd /var/www/html/proyectos/proyecto01"
 source ~/.bashrc
 ````
 
+## Buscar textos dentro de archivos recursivamente
+````
+grep -r "texto a buscar" /var/www/html/proyectos/app
+````
+
