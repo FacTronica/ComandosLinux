@@ -112,4 +112,15 @@ source ~/.bashrc
 ````
 grep -r "texto a buscar" /var/www/html/proyectos/app
 ````
+## Acceso Vpn con wireguard
+````
+su -
+cd /etc/wireguard
+wg-quick up config
+````
 
+## Asignar dns de google
+````
+nano /etc/resolv.con
+nameserver 8.8.8.8
+````
