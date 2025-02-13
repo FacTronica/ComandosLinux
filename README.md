@@ -35,7 +35,7 @@ quit;
 ## EXPORTAR E IMPORTAR BASE DE DATOS:
 ````
 mysqldump --user=$USUARIO --password=$CLAVE $BD > $ARCHIVO.sql;
-mysql -u $USUARIO -p $BD < $ARCHIVO.sql;
+mysql -u $USUARIO -pABC123 $BD < $ARCHIVO.sql;
 ````
 
 ### EJECUTAR COMANDOS SQL DESATENDIDO DESDE CONSOLA
