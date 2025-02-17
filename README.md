@@ -6,6 +6,17 @@ Un Resumen de comandos básicos Consola GnuLinux
 useradd juanperez
 userdel juanperez
 ````
+
+## VER USUARIO DE SISTEMA
+````
+cat /etc/passwd
+````
+
+## LISTAR USUARIOS HUMANOS
+````
+awk -F: '$3 >= 1000 {print $1}' /etc/passwd
+````
+
 ## Espacio utilizado por cada carpeta
 ````
 du -sm * > listado.txt
