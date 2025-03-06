@@ -135,3 +135,15 @@ wg-quick up config
 nano /etc/resolv.con
 nameserver 8.8.8.8
 ````
+## Instalar cron
+````
+apt install cron -y
+````
+
+## Ejemplo cron 
+````
+*/10 * * * * /var/www/html/script.sh
+````
+
+
+## 
