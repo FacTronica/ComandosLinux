@@ -146,4 +146,7 @@ apt install cron -y
 ````
 
 
-## 
+## Ver logs cron
+````
+journalctl -u cron -f
+````
