@@ -43,10 +43,21 @@ FLUSH PRIVILEGES;
 quit;
 ````
 
-## EXPORTAR E IMPORTAR BASE DE DATOS:
+## EXPORTAR BASE DE DATOS COMPLETA:
 ````
 mysqldump --user=$USUARIO --password=$CLAVE $BD > $ARCHIVO.sql;
-mysql -u $USUARIO -pABC123 $BD < $ARCHIVO.sql;
+````
+
+## EXPORTAR SOLO UNA TABLA DE UNA BASE DE DATOS:
+````
+mysqldump --user=$USUARIO --password=$CLAVE $BD $TABLA > $ARCHIVO.sql;
+o
+mysqldump -u $USUARIO -p $CLAVE $BD $TABLA > $ARCHIVO.sql;
+````
+
+## IMPORTAR UNA BASE DE DATOS:
+````
+mysql -u $USUARIO -p$CLAVE $BD < $ARCHIVO.sql;
 ````
 
 ### EJECUTAR COMANDOS SQL DESATENDIDO DESDE CONSOLA
