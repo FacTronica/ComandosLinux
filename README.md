@@ -55,6 +55,16 @@ o
 mysqldump -u $USUARIO -p $CLAVE $BD $TABLA > $ARCHIVO.sql;
 ````
 
+## EXPORTAR SOLO LA ESTRUCTURA
+````
+mysqldump -u $USUARIO -p --no-data $BD $TABLA > $ARCHIVO.sql
+````
+
+## EXPORTAR SOLO LOS DATOS
+````
+mysqldump -u $USUARIO -p --no-create-info $BD $TABLA > $ARCHIVO.sql
+````
+
 ## IMPORTAR UNA BASE DE DATOS:
 ````
 mysql -u $USUARIO -p$CLAVE $BD < $ARCHIVO.sql;
