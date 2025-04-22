@@ -65,6 +65,11 @@ mysqldump -u $USUARIO -p --no-data $BD $TABLA > $ARCHIVO.sql
 mysqldump -u $USUARIO -p --no-create-info $BD $TABLA > $ARCHIVO.sql
 ````
 
+## EXPORTAR Y COMPRIMIR BASE DE DATOS
+````
+mysqldump -u $USUARIO -p $BASEDATOS $TABLA | gzip > $TABLA.sql.gz
+````
+
 ## IMPORTAR UNA BASE DE DATOS:
 ````
 mysql -u $USUARIO -p$CLAVE $BD < $ARCHIVO.sql;
