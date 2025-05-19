@@ -176,3 +176,9 @@ apt install cron -y
 ````
 journalctl -u cron -f
 ````
+
+## Instalar CertBot
+````
+apt install certbot python3-certbot-apache
+
+````
