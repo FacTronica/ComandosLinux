@@ -86,10 +86,13 @@ mysql --host=localhost --user=usuariobd --password=clavebd -e "truncate table ba
 split -d -b 10m direccion_formateada.csv direcciones_
 ````
 
+## Comando para Cambiar zona horaria del Servidor
+````
+timedatectl set-timezone America/Santiago
+````
+
 ## Comandos para Cambiar fecha y hora Servidor
 ````
-timedatectl set-timezone Chile/Continental
-timedatectl
 date -s "20 SEP 2023 12:00:00"
 en php date_default_timezone_set("Chile/Continental");
 ````
