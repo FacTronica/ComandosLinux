@@ -151,6 +151,7 @@ source ~/.bashrc
 ## Buscar textos dentro de archivos recursivamente
 ````
 grep -r "texto a buscar" /var/www/html/proyectos/app
+grep -r --include="*.js" --include="*.php" "texto a buscar" /var/www/html/proyectos/app
 ````
 ## Acceso Vpn con wireguard
 ````
